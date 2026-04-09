@@ -1,0 +1,14 @@
+[project]
+name = "lab-assignments"
+version = "0.1.0"
+description = "MSL lab assignment notebooks"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "polars>=1.0",
+    "pandas>=2.0",
+    "altair>=5.0",
+    "networkx>=3.0",
+    "pyarrow>=14.0",
+    "jupyter",
+    "ipykernel",
+]
