@@ -1,14 +1,22 @@
 [project]
 name = "lab-assignments"
 version = "0.1.0"
-description = "MSL lab assignment notebooks"
+description = "MSL lab assignment notebooks (onboarding + research tracks)"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    # Shared across both tracks
     "polars>=1.0",
     "pandas>=2.0",
     "altair>=5.0",
-    "networkx>=3.0",
     "pyarrow>=14.0",
     "jupyter",
     "ipykernel",
+    # Research track
+    "networkx>=3.0",
+    # Onboarding track additions
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "scikit-learn>=1.4",
+    "vl-convert-python>=1.6",  # altair PNG/SVG export
+    "wandb>=0.16",             # 2b smoke test
 ]
